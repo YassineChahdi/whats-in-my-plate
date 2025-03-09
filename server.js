@@ -8,7 +8,7 @@ const { exec } = require('child_process');
 
 // Initialize the app and configure CORS
 const app = express();
-const port = 8081;
+const port = process.env.PORT || 3000;
 app.use(cors()); // Allow cross-origin requests from your React Native app
 
 // Set up multer to handle image uploads
