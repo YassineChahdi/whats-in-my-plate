@@ -34,9 +34,6 @@ def is_food(img_path):
         return True
     return False
 
-img_path = "imgs/" + "food2.webp"
-
-
 if __name__ == "__main__":
     img_path = sys.argv[1]
     if is_food(img_path):
