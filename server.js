@@ -8,7 +8,7 @@ const { exec } = require('child_process');
 
 // Initialize the app and configure CORS
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 5002;
 app.use(cors()); // Allow cross-origin requests from your React Native app
 
 // Set up multer to handle image uploads
@@ -62,5 +62,6 @@ if (!fs.existsSync('uploads')) {
 
 // Start the server
 app.listen(port, () => {
+  console.log(`we get here`);
   console.log(`Server is running on http://localhost:${port}`);
 });

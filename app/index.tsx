@@ -42,7 +42,7 @@ export default function CameraScreen() {
 
     try {
       // Here adjust ip to match current
-      const response = await axios.post('http://whats-in-my-plate-production-3a40.up.railway.app/analyze-image', formData, {
+      const response = await axios.post('http://192.168.0.18:5002/analyze-image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
